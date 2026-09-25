@@ -1,37 +1,56 @@
 import React from 'react';
-import { PenTool } from 'lucide-react';
+import { BrainCircuit, MessageCircle, ShieldAlert } from 'lucide-react';
 
 const Reto = () => {
-  const cuentos = [
+  const retos = [
     {
-      autor: "Manuel Ríos",
-      texto: "Estaba la sapa caramelo sentada en la orilla del río cauca en el peñasco mas alto de la región, ella lucia muy elegante como si esperara a alguien pero a medida que pasaba el tiempo nadie llego, ya era de noche y marchó a su hogar un poco agripada y con bastante hambre se comió un moco que saco de su nariz, un sapo vio eso y empezó a vomitar, la sapa se dio cuenta de su presencia y salió a correr avergonzada como si le fueran clavado una estaca del susto, llegó a su casa y se encerró allí miro a la ventana y el sapo estaba hay. estaba enredado en un nudo y pidiendo ayuda, la sapa salio de la casa y lo ayudo, el sapo le dio las gracias pero era una trampa el cogio una tapa y se la tiro, la sapa callo al suelo y el sapo pensó que la mato, asi que le dio respiración boca a boca con la esperanza de que estuviera con vida pero al final la sapa nunca desperto."
+      nombre: "Manuel Rios",
+      icono: <BrainCircuit size={48} className="text-emerald-600 mb-4" />,
+      titulo: "Me molesto por que las personas no hacen lo que deben de hacer",
+      texto: "Durante mucho tiempo eh tratado de ser una persona expcional, que la gente me vea y diga yo quiero ser asi y me exigo mucho por conseguir eso, creo que por eso me da rabia o estres que una persona haga las cosas a medias, sobre todo con las personas que yo quiero que esten bien, les exigo mucho pero no son yo y eso esta bien, el estres tambien se debe a que me siento mal por descansar, siempre que lo hago me acuerdo de que debo de hacer algo y si no lo hago me siento mal conmigo mismo por eso cuando veo a una persona descansado me da ira pero no por que lo hace si no por la envidia. Pero la base de todo, mi actitud; es por mi niñes me juzgaban mucho y me prometi que nunca mas se iban a burlar de mi"
     },
     {
-      autor: "David Alexander Restrepo",
-      texto: "Estaba la sapa Caramelo sentaba en el rio cauca en el peñasco mas alto de la región pensando sobre la vida cuando se iba para la casa se cayo y le salió un moco, se levanto y se fue al bosque y se encontró en un árbol que estaba una ESTACA. Y después se fue caminando en busca de un atajo para ir a la casa y se cayo y le toco hacer un nudo en los zapatos. Despues de esto se encontró una Tapa en un cadáver de un hombre muerto Pero se entero que estaba en una zona de minas colocada por los ELN y no había esperanza y fin."
+      nombre: "David Alexander Restrepo",
+      icono: <ShieldAlert size={48} className="text-emerald-600 mb-4" />,
+      titulo: "Soy muy pacifico y voy a estallar",
+      texto: "Mi conflicto interno personal siempre ha estado ligado a la forma en que reacciono cuando quiero hacer algo pero permito que las personas decidan por mi, esn este momento estoy peliado con mi madre por eso, estoy tan aconstumbrado a hacer lo que los demas digan que no se como decirle a ella que estoy en desacuerdo con lo que dice y que quiero hacer otra cosa, pensaba que era ella la que no me entendia pero nunca se lo eh echo entender."
     },
     {
-      autor: "Sebastián Ramírez",
-      texto: "Estaba la Sapa caramelo sentada en la orilla del rio cauca en el pelado más alto del a región Pensando en qué hacer con su vida mientras ella pensaba paso un águila dorada que quería hablar con ella y cuál fue su motivo de estar allí y ella no pudo darle una respuesta clara, al final quiso no acabar con su vida Pero el águila se dio cuenta que tenía un moco moco tan grande Pero tan grande que tratando de quitárselo se tropezó con la rana y se fueron al abismo al tropezar con la rana el moco del águila callo en la boca de la rana y cayeron en un largo tiempo que terminaron en la cabaña de un granjero y el águila quedo atrapada en una estaca con alrededor de púas la rana no sabía que hacer ni que decir como si tuviera un nudo en la garganta Pero trato y trato de hablar hasta que pudo y llamo a alguien alrededor a ayudarla que alguien estaba herido después de salvar su vida y mientras el campesino venía se calló de la forma más tonta que al decirlo da gracia con una simple tapa y quedó sin moverse como si hubiera muerto ella al no ver lo que valía su vida al punto de querer acabarla se dio cuenta que la vida es un momento y que gracias a lo que le sucedió ese día le dio otra oportunidad y al ver que el campesino se levantó lo ayudo y llamaron a una ambulancia para que el águila se mejorara le dio esperanza de que nada es tan malo y que siempre va a ver una solución. FIN"
+      nombre: "Sebastian Ramirez",
+      icono: <MessageCircle size={48} className="text-emerald-600 mb-4" />,
+      titulo: "Suelo juzgarme mucho y me hace tener una mala comunicacion",
+      texto: "Tengo un conflicto con el pensamiento tan limitante que yo mismo me pongo ya que me acostumbre a juzgarme y se muy duro conmigo mismo, eso hace que tenga una mala comunicacion ya que no soy capaz de tratarme mejor, y creo que uno decide con quien tiene una mala comunicacion y ya que si yo estoy mal, voy a tener conflicto con la gente mientras que si yo estoy bien decido con quien tengo o no esa mala comunicacion."
     }
   ];
 
   return (
-    <div>
+    <div className="max-w-6xl mx-auto py-12 px-4">
       <div className="text-center mb-12">
-        <h2 className="text-5xl font-bold text-emerald-800">Reto de Creación</h2>
-        <p className="text-gray-600 mt-4 text-2xl">Palabras clave: MOCO, ESTACA, NUDO, TAPA, ESPERANZA</p>
+        <h1 className="text-5xl font-extrabold text-emerald-900 mb-4">El Conflicto Interno Personal</h1>
+        <p className="text-2xl text-gray-600">El reto de encontrar nuestra propia voz asertiva</p>
       </div>
-      
-      <div className="space-y-10 max-w-5xl mx-auto">
-        {cuentos.map((cuento, i) => (
-          <div key={i} className="bg-white p-8 rounded-xl shadow-md border-t-4 border-emerald-400 relative">
-            <div className="absolute -top-5 -left-5 bg-emerald-500 text-white p-3 rounded-full shadow-lg">
-              <PenTool size={28} />
+
+      <div className="space-y-12">
+        {retos.map((reto, idx) => (
+          <div key={idx} className="bg-white rounded-3xl shadow-xl overflow-hidden border-2 border-emerald-100 flex flex-col md:flex-row hover:shadow-2xl transition-shadow duration-300">
+            
+            {/* Sección visual del integrante */}
+            <div className="bg-emerald-50 md:w-1/3 p-8 flex flex-col items-center justify-center text-center border-b md:border-b-0 md:border-r border-emerald-100">
+              {reto.icono}
+              <h2 className="text-3xl font-bold text-emerald-900">{reto.nombre}</h2>
             </div>
-            <h3 className="text-3xl font-bold text-emerald-700 mb-4 ml-6">{cuento.autor}</h3>
-            <p className="text-xl text-gray-800 leading-relaxed italic">"{cuento.texto}"</p>
+
+            {/* Sección del texto del reto */}
+            <div className="p-8 md:w-2/3 flex flex-col justify-center">
+              <h3 className="text-2xl font-bold text-emerald-700 mb-4">{reto.titulo}</h3>
+              <p className="text-xl text-gray-700 leading-relaxed">
+                {reto.texto}
+              </p>
+              <div className="mt-6 pl-4 border-l-4 border-emerald-500 italic text-emerald-800 text-lg">
+                "La verdadera asertividad nace cuando enfrentamos y sanamos nuestro conflicto interno."
+              </div>
+            </div>
+
           </div>
         ))}
       </div>
