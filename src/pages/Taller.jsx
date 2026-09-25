@@ -1,61 +1,63 @@
 import React from 'react';
 
-export default function Taller() {
+const Taller = () => {
   return (
-    <div className="space-y-10">
-      <h2 className="text-4xl font-bold text-center text-green-800 mb-8">Reflexión: Tipos de Comunicación</h2>
-
-      <div className="bg-white p-8 rounded-xl shadow-md space-y-6 text-gray-800">
-        <h3 className="text-2xl font-bold text-green-700">Objetivo: Identificar los tipos de comunicación en la comunicación asertiva</h3>
-        
-        <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
-          <p className="font-bold mb-2">¿Cuáles son los tipos de comunicación que asumen los seres humanos en su interacción cotidiana?</p>
-          <ul className="list-disc ml-6 space-y-2">
-            <li><strong>Comunicación Pasiva:</strong> Evitan mostrar sus opiniones o sentimientos, cediendo ante los demás para no generar conflictos.</li>
-            <li><strong>Comunicación Agresiva:</strong> Defienden los propios derechos pasando por alto los de los demás (confrontación, gritos, imposición).</li>
-            <li><strong>Comunicación Pasiva-Agresiva:</strong> Expresan sus necesidades y sentimientos de forma indirecta o sarcástica.</li>
-            <li><strong>Comunicación Asertiva:</strong> Es el equilibrio. Se expresan las ideas de forma honesta, directa y respetuosa, sin vulnerar a los demás.</li>
+    <div className="bg-white rounded-xl shadow-xl p-10 max-w-6xl mx-auto">
+      <h2 className="text-5xl font-bold text-emerald-700 border-b-2 border-emerald-100 pb-6 mb-8">Taller: Tipos de Comunicación</h2>
+      
+      <div className="space-y-10 text-xl text-gray-700 leading-relaxed">
+        <section>
+          <h3 className="text-3xl font-bold text-emerald-600 mb-4">1. Tipos de comunicación humana</h3>
+          <ul className="list-disc pl-8 space-y-4">
+            <li><strong>Pasiva:</strong> Las personas evitan mostrar sus opiniones o sentimientos, cediendo ante los demás para no generar conflictos.</li>
+            <li><strong>Agresiva:</strong> Se defienden los propios derechos o deseos pasando por alto los de los demás, a menudo utilizando la confrontación, los gritos o la imposición.</li>
+            <li><strong>Pasiva-Agresiva:</strong> Las personas de forma indirecta o sarcástica expresan sus necesidades y sentimientos.</li>
+            <li><strong>Asertiva:</strong> Es el punto de equilibrio donde se expresan las ideas, necesidades y sentimientos de forma honesta, directa y respetuosa, sin vulnerar a los demás.</li>
           </ul>
-        </div>
+        </section>
 
-        <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
-          <p className="font-bold mb-2">¿Cuál es la diferencia entre comunicación agresiva y comunicación pasiva?</p>
-          <p>La comunicación agresiva prioriza de forma absoluta sus propias opiniones mediante un estilo impositivo e intimidatorio que vulnera a los demás. En cambio, la pasiva guarda sus opiniones, prioriza siempre los deseos ajenos, evita el conflicto a toda costa y acumula frustración.</p>
-        </div>
+        <section>
+          <h3 className="text-3xl font-bold text-emerald-600 mb-4">2. Diferencia entre Agresiva y Pasiva</h3>
+          <p>La comunicación agresiva prioriza de forma absoluta sus propias opiniones, necesidades y derechos, utilizando un estilo impositivo e intimidatorio. La pasiva guarda sus opiniones, prioriza siempre los deseos ajenos por encima de los propios y evita a toda costa el confronto, reprimiendo sus emociones y acumulando frustración.</p>
+        </section>
 
-        <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
-          <p className="font-bold mb-2">Ejemplo de la vida cotidiana de comunicación pasiva-agresiva:</p>
-          <p>Ocurre cuando un compañero de trabajo llega tarde de forma recurrente afectando al equipo. En lugar de decírselo de frente, otra persona suspira exageradamente, tira con fuerza las carpetas y responde de manera cortante con monosílabos ("sí", "como sea"), mostrando enojo indirecto sin admitir verbalmente lo que le molesta.</p>
-        </div>
+        <section className="bg-green-50 p-8 rounded-xl border border-green-200">
+          <h3 className="text-2xl font-bold text-emerald-800 mb-4">Ejemplo Cotidiano: Comunicación Pasivo-Agresiva</h3>
+          <p className="italic text-gray-800">"Un compañero de trabajo llega tarde de forma recurrente afectando al equipo. En lugar de decírselo de frente de manera madura, otra persona opta por suspirar exageradamente cada vez que llega, tirar con fuerza las carpetas sobre el escritorio y responder de manera cortante y con monosílabos ('sí', 'como sea') cuando le preguntan algo, mostrando un enojo indirecto sin admitir verbalmente lo que le molesta."</p>
+        </section>
 
-        <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
-          <p className="font-bold mb-2">Características de la comunicación asertiva:</p>
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 list-disc ml-6">
-            <li>Claridad y concisión</li>
-            <li>Empatía</li>
-            <li>Autenticidad y honestidad</li>
-            <li>Uso del "Yo"</li>
-            <li>Control emocional</li>
-            <li>Respeto mutuo</li>
-            <li>Escucha activa</li>
-            <li>Congruencia en el lenguaje no verbal</li>
-            <li>Orientación a la solución de problemas</li>
-            <li>Capacidad para decir "No" sin culpa</li>
-          </ul>
-        </div>
+        <section>
+          <h3 className="text-3xl font-bold text-emerald-600 mb-6">3. Investigación: Comunicación No Verbal</h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-gray-50 p-6 rounded-xl">
+              <span className="font-bold text-2xl text-emerald-700 block mb-2">Kinesis</span>
+              El estudio de los movimientos corporales. Incluye posturas, inclinación del cuerpo y la forma de caminar, revelando actitudes y niveles de tensión.
+            </div>
+            <div className="bg-gray-50 p-6 rounded-xl">
+              <span className="font-bold text-2xl text-emerald-700 block mb-2">Microexpresiones</span>
+              Movimientos faciales rápidos e involuntarios que revelan emociones ocultas o verdaderas.
+            </div>
+            <div className="bg-gray-50 p-6 rounded-xl">
+              <span className="font-bold text-2xl text-emerald-700 block mb-2">Proxemia</span>
+              El uso del espacio físico y la distancia entre personas (íntima, personal, social y pública).
+            </div>
+            <div className="bg-gray-50 p-6 rounded-xl">
+              <span className="font-bold text-2xl text-emerald-700 block mb-2">Paralenguaje</span>
+              Cualidades no verbales de la voz: el tono, el volumen, el ritmo, los suspiros o las pausas.
+            </div>
+            <div className="bg-gray-50 p-6 rounded-xl">
+              <span className="font-bold text-2xl text-emerald-700 block mb-2">Emblemas y Ademanes</span>
+              Los emblemas son gestos con traducción verbal (pulgar arriba). Los ademanes son movimientos de manos que acompañan el discurso.
+            </div>
+            <div className="bg-gray-50 p-6 rounded-xl">
+              <span className="font-bold text-2xl text-emerald-700 block mb-2">Entorno Social</span>
+              Comunica mediante la vestimenta, el protocolo y el tipo de saludo. Refleja pertenencia y roles.
+            </div>
+          </div>
+        </section>
       </div>
-
-      <section className="bg-green-800 text-white p-8 rounded-xl shadow-md mt-10">
-        <h3 className="text-2xl font-bold mb-6">Investigación: Comunicación no verbal</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="bg-green-700 p-4 rounded"><strong>1. Kinesis:</strong> Estudio del movimiento del cuerpo, posturas y gestos.</div>
-          <div className="bg-green-700 p-4 rounded"><strong>2. Microexpresiones:</strong> Gestos faciales rápidos e involuntarios que revelan emociones reales.</div>
-          <div className="bg-green-700 p-4 rounded"><strong>3. Proxemia:</strong> El uso y percepción del espacio personal y físico.</div>
-          <div className="bg-green-700 p-4 rounded"><strong>4. Paralenguaje:</strong> Tono, volumen y ritmo de la voz que acompañan a las palabras.</div>
-          <div className="bg-green-700 p-4 rounded"><strong>5. Emblemas y Ademanes:</strong> Gestos con significado cultural específico (ej: pulgar arriba).</div>
-          <div className="bg-green-700 p-4 rounded"><strong>6. Entorno social:</strong> Vestimenta, protocolo y saludos como formas de comunicar identidad y respeto.</div>
-        </div>
-      </section>
     </div>
   );
-}
+};
+
+export default Taller;
